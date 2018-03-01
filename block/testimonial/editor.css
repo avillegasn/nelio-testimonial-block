@@ -1,0 +1,68 @@
+/**
+ * ----------------------------------------------------------------------------
+ * Editor CSS
+ * ----------------------------------------------------------------------------
+ */
+
+.wp-block-nelio-testimonial-block ul,
+.wp-block-nelio-testimonial-block li {
+	list-style: none;
+	margin: 0; padding: 0;
+}
+.wp-block-nelio-testimonial-block {
+	display: flex;
+	align-items: stretch;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
+}
+.wp-block-nelio-testimonial-block .nelio-testimonial-image {
+	display: flex;
+	align-items: center;
+}
+.wp-block-nelio-testimonial-block .nelio-testimonial-image.image-inactive {
+	background: #f4f4f4;
+	width: 40%;
+	border: 1px solid #dddddd;
+}
+.wp-block-nelio-testimonial-block .nelio-testimonial-image.image-active {
+	background-size: cover;
+	background-position: center;
+	max-width: 40%;
+}
+.wp-block-nelio-testimonial-block .nelio-testimonial-image button {
+	margin: 0 auto;
+}
+.wp-block-nelio-testimonial-block .nelio-testimonial-image button.image-button {
+	line-height: 0;
+	padding: 0px;
+}
+.wp-block-nelio-testimonial-block .nelio-testimonial-image button.image-button img {
+	opacity: 0;
+	margin: 0;
+}
+.wp-block-nelio-testimonial-block .nelio-testimonial-content {
+	width: 60%;
+	align-self: center;
+	padding: 18px;
+	box-sizing: border-box;
+}
+.wp-block-nelio-testimonial-block .nelio-testimonial-content .nelio-testimonial-name {
+	font-weight: bold;
+}
+.wp-block-nelio-testimonial-block .nelio-testimonial-content .nelio-testimonial-position {
+	text-transform: uppercase;
+}
+.wp-block-nelio-testimonial-block .nelio-testimonial-contact {
+	margin-top: 12px;
+}
+.wp-block-nelio-testimonial-block .nelio-testimonial-contact .nelio-contact-link {
+	color: rgba(0, 0, 0, 0.24);
+	padding: 6px 12px;
+	border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+.wp-block-nelio-testimonial-block .nelio-testimonial-contact .nelio-contact-link:hover {
+	color: rgba(0, 0, 0, 1);
+}
+.wp-block-nelio-testimonial-block .nelio-testimonial-contact .nelio-contact-link:first-child {
+	border: none;
+}
