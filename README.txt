@@ -2,7 +2,7 @@
 Contributors: avillegasn, neliosoftware
 Donate link: https://neliosoftware.com
 Tags: gutenberg, blocks, custom block, testimonial, quote
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Requires at least: 4.8
 Tested up to: 4.9.4
 License: GPLv2 or later
@@ -36,6 +36,9 @@ A: Yes, the Gutenberg plugin must be installed and active to use this block.
 2. The Nelio Testimonial Block on the front-end.
 
 == Changelog ==
+
+= 1.0.1 =
+* Fixed some errors due to updates on Gutenberg. Props to @andrewo.
 
 = 1.0.0 =
 * Initial plugin release
