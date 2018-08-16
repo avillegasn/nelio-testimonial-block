@@ -38,7 +38,7 @@ A: Yes, the Gutenberg plugin must be installed and active to use this block.
 == Changelog ==
 
 = 1.0.1 =
-* Fixed some errors due to updates on Gutenberg. Props to @andrewo.
+* Fixed some errors due to updates on Gutenberg. Props to @andreawo.
 
 = 1.0.0 =
 * Initial plugin release
