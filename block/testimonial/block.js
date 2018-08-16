@@ -1,6 +1,10 @@
 ( function( blocks, components, i18n, element ) {
 	var el = element.createElement;
 
+	var RichText = wp.editor.RichText; // For creating editable elements.
+	var MediaUpload = wp.editor.MediaUpload;
+	var IconButton = components.IconButton;
+
 	blocks.registerBlockType(
 
 		// The name of our block. Must be a string with prefix. Example: my-plugin/my-custom-block.
@@ -83,12 +87,12 @@
 						className: attributes.mediaID ? 'nelio-testimonial-image image-active' : 'nelio-testimonial-image image-inactive',
 						style: attributes.mediaID ? { backgroundImage: 'url(' + attributes.mediaURL + ')' } : {}
 					},
-						el( blocks.MediaUpload, {
+						el( MediaUpload, {
 							onSelect: onSelectImage,
 							type: 'image',
 							value: attributes.mediaID,
 							render: function( obj ) {
-								return el( components.Button, {
+								return el( IconButton, {
 									className: attributes.mediaID ? 'image-button' : 'button button-large',
 									onClick: obj.open
 									},
@@ -99,7 +103,7 @@
 					),
 					el( 'div', {
 						className: 'nelio-testimonial-content', style: { textAlign: alignment } },
-						el( blocks.RichText, {
+						el( RichText, {
 							tagName: 'p',
 							inline: true,
 							placeholder: i18n.__( 'Write the testimonial here...' ),
@@ -112,7 +116,7 @@
 								props.setFocus( _.extend( {}, focus, { editable: 'testimonial' } ) );
 							},
 						} ),
-						el( blocks.RichText, {
+						el( RichText, {
 							tagName: 'p',
 							className: 'nelio-testimonial-name',
 							inline: false,
@@ -126,7 +130,7 @@
 								props.setFocus( _.extend( {}, focus, { editable: 'name' } ) );
 							},
 						} ),
-						el( blocks.RichText, {
+						el( RichText, {
 							tagName: 'p',
 							className: 'nelio-testimonial-position',
 							inline: false,
