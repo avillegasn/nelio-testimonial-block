@@ -27,7 +27,7 @@ function nelio_testimonial_block_editor_assets() {
 	wp_enqueue_script(
 		'nelio-testimonial-block',
 		plugins_url( 'block.js', __FILE__ ), // Block.js: We register the block here.
-		array( 'wp-blocks', 'wp-i18n', 'wp-element' ), // Dependencies, defined above.
+		array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor' ), // Dependencies, defined above.
 		filemtime( plugin_dir_path( __FILE__ ) . 'block.js' ) // filemtime — Gets file modification time.
 	);
 
@@ -51,7 +51,7 @@ function nelio_testimonial_block_front_assets() {
 	wp_enqueue_style(
 		'nelio-testimonial-block-frontend', // Handle.
 		plugins_url( 'style.css', __FILE__ ), // Block frontend CSS.
-		array( 'wp-blocks' ), // Dependency to include the CSS after it.
+		array( 'wp-editor' ), // Dependency to include the CSS after it.
 		filemtime( plugin_dir_path( __FILE__ ) . 'style.css' ) // filemtime — Gets file modification time.
 	);
 
